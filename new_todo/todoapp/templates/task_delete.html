@@ -4,15 +4,15 @@
 {% block content %}
 
 <div class="delete-container">
-    <p>Are you sure want to delete</p>
-    <h4>"{{task.title}}"</h4>
+    <p>Вы уверены что хотите удалить задачу?</p>
+    <h4 class="delete-container__title">"{{task.title}}"</h4>
     <div class="btn-container">
         <a href="{% url 'task-list' %}">
-            <button class="btn-cancel">Cancel</button>
+            <button class="btn-cancel">Отмена</button>
         </a>
         <form action="" method='POST'>
             {% csrf_token %}
-            <button class="btn-delete">Delete</button>
+            <button class="btn-delete">Удалить</button>
         </form>
 
     </div>

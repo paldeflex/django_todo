@@ -7,8 +7,7 @@
 }
 
 body{
-    /* background-color: #a459f4; */
-    background-color: #a459f4;
+    background-color: #4D6AFFFF;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -20,11 +19,14 @@ body{
     color: white
 }
 
+.delete-container__title {
+    margin-bottom: 24px;
+}
+
 .todo-container{
-    width:  450px;
+    width:  520px;
     height: auto;
-    /* border: 1px solid white;| */
-    padding: 0px 20px 0px 20px;
+    padding: 0 20px 0 20px;
 }
 
 .todo-search{
@@ -80,14 +82,14 @@ select{
 }
 
 input:focus, select:focus{
-    outline: 1px solid #a459f4;
+    outline: 1px solid #4D6AFFFF;
 }
 
 .todo-search form button{
     height: 50px;
-    width: 70px;
     padding: 0px 10px 0px 10px;
-    background-color: #a459f4;
+    margin-left: 12px;
+    background-color: #4D6AFFFF;
     color: white;
     border: none;
     border-radius: 5px;
@@ -110,13 +112,13 @@ input:focus, select:focus{
 
 }
 .todo-list-item .edit{
-    margin-right: 10px;
+    margin-right: 12px;
 }
 .todo-list-item .edit, .todo-list-item .del{
     width: 40px;
     height: 40px;
     border-radius: 5px;
-    background-color: #a459f4;
+    background-color: #4D6AFFFF;
     color: white;
     cursor: pointer;
     display: flex;
@@ -127,6 +129,10 @@ input:focus, select:focus{
 
 .todo-list .task{
     display: flex;
+}
+
+.task p {
+    margin: 0;
 }
 
 .todo-list .task input{
@@ -147,14 +153,13 @@ input:focus, select:focus{
 }
 
 .btn-container{
-    margin-top: 20px;
     display: flex;
 }
 
 .btn-cancel, .btn-delete{
     width: 100px;
     height: 50px;
-    background-color: #a459f4;
+    background-color: #4D6AFF;
     color: white;
     border: none;
     font-size: 20px;
